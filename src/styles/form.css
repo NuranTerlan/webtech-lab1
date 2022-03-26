@@ -1,0 +1,96 @@
+@import url("./base.css");
+
+body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+form {
+  width: clamp(200px, 100%, 600px);
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+fieldset {
+  padding: 1rem;
+  border: 2px dashed #c9d6df;
+  display: grid;
+  gap: 1rem;
+}
+
+legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e2022;
+}
+
+.field-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  min-width: 100%;
+}
+
+.specific-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+label,
+input {
+  width: 100%;
+}
+
+label {
+  color: #52616b;
+}
+
+input,
+textarea,
+button {
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: #f0f5f9;
+}
+
+input[type="reset"],
+input[type="submit"],
+input[type="button"],
+button {
+  font-weight: bold;
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+  cursor: pointer;
+  color: #1e2022;
+}
+input[type="button"] {
+  color: #00adb5;
+}
+input[type="reset"] {
+  color: #f6c90e;
+}
+input[type="submit"] {
+  color: #4bb543;
+}
+input[type="image"] {
+  width: clamp(200px, 50%, 500px);
+}
+input[type="color"] {
+  width: 50px;
+}
+
+textarea {
+  /* min-height: 100px;
+  min-width: 50%; */
+
+  resize: none;
+}

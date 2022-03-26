@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./src/styles/form.css" />
+    <title>Form | Nuran Tarlan lab/1</title>
+  </head>
+  <body>
+    <a href="./index.html" class="back">Back</a>
+    <form>
+      <!-- all input types -->
+      <fieldset>
+        <legend>All input types</legend>
+        <div class="field-section">
+          <label for="text">Text input</label>
+          <input id="text" type="text" />
+        </div>
+        <div class="field-section">
+          <label for="text">Readonly text input</label>
+          <input id="text" readonly type="text" value="xxxxxxxxxx@gmail.com" />
+        </div>
+        <div class="field-section">
+          <label for="password">Password input</label>
+          <input id="password" type="password" />
+        </div>
+        <div class="field-section">
+          <label for="email">Email input</label>
+          <input id="email" type="email" />
+        </div>
+        <div class="field-section">
+          <label for="number">Number input</label>
+          <input id="number" type="number" />
+        </div>
+        <div class="field-section">
+          <label for="search">Search input</label>
+          <input id="search" type="search" />
+        </div>
+        <div class="field-section">
+          <label for="date">Date input</label>
+          <input id="date" type="date" />
+        </div>
+        <div class="field-section">
+          <label for="datetime-local">DateTime localocal input</label>
+          <input id="datetime-local" type="datetime-local" />
+        </div>
+        <div class="field-section">
+          <label for="month">Month input</label>
+          <input id="month" type="month" />
+        </div>
+        <div class="field-section">
+          <label for="week">Week input</label>
+          <input id="week" type="week" />
+        </div>
+        <div class="field-section">
+          <label for="time">Time input</label>
+          <input id="time" type="time" />
+        </div>
+        <div class="field-section">
+          <label for="url">Url input</label>
+          <input id="url" type="url" />
+        </div>
+        <div class="field-section">
+          <label for="tel">Telephone input</label>
+          <input id="tel" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
+        </div>
+        <div class="field-section">
+          <label for="range">Range input</label>
+          <input id="range" type="range" />
+        </div>
+        <div class="field-section">
+          <label for="color">Color picker input</label>
+          <input id="color" type="color" />
+        </div>
+        <div class="field-section">
+          <label for="file">File input</label>
+          <input id="file" type="file" />
+        </div>
+        <div class="field-section">
+          <label for="checkbox">Checkbox input</label>
+          <div class="specific-area">
+            <input type="checkbox" id="yyyy" name="Y" value="Yyyy" />
+            <label for="yyyy">Yyyy</label>
+            <input type="checkbox" id="yyy" name="Y" value="Yyy" />
+            <label for="yyy">Yyy</label>
+            <input type="checkbox" id="yyyyyyy" name="Y" value="Yyyyyyy" />
+            <label for="yyyyyyy">Yyyyyyy</label>
+          </div>
+        </div>
+        <div class="field-section">
+          <label for="radio">Radio input</label>
+          <div class="specific-area">
+            <input type="radio" id="xxxx" name="X" value="Xxxx" />
+            <label for="xxxx">Xxxx</label>
+            <input type="radio" id="xxx" name="X" value="Xxx" />
+            <label for="xxx">Xxx</label>
+            <input type="radio" id="xxxxxxx" name="X" value="Xxxxxxx" />
+            <label for="xxxxxxx">Xxxxxxx</label>
+          </div>
+        </div>
+        <div class="field-section">
+          <label for="hidden">Hidden input</label>
+          <input id="hidden" type="hidden" />
+        </div>
+        <div class="field-section">
+          <label for="button">Custom button input</label>
+          <input
+            id="button"
+            type="button"
+            onclick="alert('Hello friend!')"
+            value="Click to see magic"
+          />
+        </div>
+        <div class="field-section">
+          <label for="reset">Reset input</label>
+          <input id="reset" type="reset" />
+        </div>
+        <div class="field-section">
+          <label for="image">Image submit input</label>
+          <input
+            id="image"
+            type="image"
+            src="https://media3.giphy.com/media/zaqclXyLz3Uoo/giphy.gif?cid=82a1493by06un85pszp4q62y2vliy229nwspuhh7xcqluqm2&rid=giphy.gif&ct=g"
+            alt="submit"
+          />
+        </div>
+        <div class="field-section">
+          <label for="submit">Submit input</label>
+          <input id="submit" type="submit" value="Submit" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>All list options</legend>
+        <div class="field-section">
+          <label for="select-list">Single select</label>
+          <select name="select-list" id="select-list">
+            <option value="Xxx">Xxx</option>
+            <option value="Yyyyy" selected>Yyyyy</option>
+            <option value="Jjjj">Jjjj</option>
+            <option value="Kkk">Kkk</option>
+          </select>
+        </div>
+        <div class="field-section">
+          <label for="select-list-multi">Multiple select</label>
+          <select
+            name="select-list-multi"
+            id="select-list-multi"
+            multiple
+            size="5"
+          >
+            <option value="Xxx">Xxx</option>
+            <option value="Yyyyy">Yyyyy</option>
+            <option value="Jjjj">Jjjj</option>
+            <option value="Kkk">Kkk</option>
+            <option value="Xxx">Aaaaa</option>
+            <option value="Yyyyy">Bbb</option>
+            <option value="Jjjj">Cccc</option>
+            <option value="Kkk">Zzzzz</option>
+          </select>
+        </div>
+        <div class="field-section">
+          <label for="list-input">Datalist</label>
+          <input list="list" id="list-input" />
+          <datalist id="list">
+            <option value="Xxxxx" />
+            <option value="Yyy" />
+            <option value="Aaaaaa" />
+            <option value="Bbbb" />
+            <option value="Ccccz" />
+          </datalist>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Textarea</legend>
+        <textarea name="message" rows="10" cols="30">
+The default message here</textarea
+        >
+      </fieldset>
+      <fieldset>
+        <legend>Button with button</legend>
+        <button onclick="alert('This message from custom button')">
+          Button
+        </button>
+      </fieldset>
+    </form>
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+      <fieldset>
+        <legend>Output</legend>
+        <input type="range" id="b" name="b" value="50" /> +
+        <input type="number" id="a" name="a" value="10" /> =
+        <output name="result" for="a b">60</output>
+      </fieldset>
+    </form>
+  </body>
+</html>
